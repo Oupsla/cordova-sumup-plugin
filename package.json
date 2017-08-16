@@ -1,0 +1,21 @@
+{
+  "name": "cordova-plugin-sumup",
+  "version": "1.0.0",
+  "description": "Cordova plugin for native acces to the sumup paiement system",
+  "cordova": {
+    "id": "cordova-plugin-sumup",
+    "platforms": [
+      "android"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Oupsla/cordova-sumup-plugin.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Oupsla/cordova-sumup-plugin/issues"
+  },
+  "homepage": "https://github.com/Oupsla/cordova-sumup-plugin#readme"
+}

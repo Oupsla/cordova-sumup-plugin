@@ -1,0 +1,46 @@
+apply plugin: 'com.android.application'
+
+repositories {
+	mavenCentral()
+	jcenter()
+}
+
+allprojects {
+	repositories {
+		jcenter()
+		maven {
+			url 'https://maven.sumup.com/releases'
+		}
+    flatDir {
+        dirs 'libs'
+     }
+	}
+}
+
+android {
+    compileSdkVersion 24
+    buildToolsVersion "25.0.1"
+
+    defaultConfig {
+        minSdkVersion 15
+        targetSdkVersion 24
+        versionCode 1
+        versionName "2.3.0"
+    }
+
+  packagingOptions {
+    exclude 'META-INF/NOTICE'
+    exclude 'META-INF/LICENSE'
+  }
+}
+
+dependencies {
+    compile 'com.android.support:appcompat-v7:24.2.1'
+
+    compile('com.sumup:merchant-sdk:2.3.0@aar') {
+        transitive = true
+    }
+
+	   debugCompile project(path: "CordovaLib", configuration: "debug")
+	    releaseCompile project(path: "CordovaLib", configuration: "release")
+}
