@@ -11,7 +11,7 @@ Pull requests are welcome to integrate IOS !
 <b>Installation</b>
 
 <pre>
-$ cordova plugin add https://github.com/Oupsla/cordova-sumup-plugin.git --variable SUMUP_API_KEY=YOUR_AFFILIATION_KEY
+$ cordova plugin add cordova-plugin-sumup --variable SUMUP_API_KEY=--variable SUMUP_API_KEY=YOUR_AFFILIATION_KEY
 </pre>
 
 You can your affiliation key here : https://me.sumup.com/developers
@@ -34,5 +34,5 @@ You have to add your cordova package in the 'Application identifiers'
     function(error) {
 
     }, amount, currency (ex : 'EUR'), customerEmail, customerPhone);
-    
+
 </pre>
